@@ -1,8 +1,6 @@
 body {
-    background-color: lightblue;
+    background-image: url(images/lGreen.jpeg);
 }
-
 h1 {
-    color: navy;
-    margin-left: 20px;
-} 
+    color: white;
+}

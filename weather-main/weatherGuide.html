@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HTML of WordDoc</title>
+  <meta name="description" content="Word Doc build in HTML">
+  <meta name="viewport" content="width=device-width">
+ </head>
+ <body>
+     <basefont size="14">
+<header>
+ <h1 style="color:darkblue ">Weather Site Plan</h1>
+</header>
+<h2 style="color: cornflowerblue">Purpose</h2>
+     The purpose of the <b><i>Weather Site</i></b> is to give current weather conditions in 3 different ways.  The initial page will give the weather for the current location based on the Geocoding location information from the device.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.
+<h2 style="color: cornflowerblue">Audience</h2>
+     Primary audience is adults ages 18-30.  Most will be students.  Access to the site will be split between mobile devices and laptops. A secondary audience will be anyone interested in weather.
+<h2 style="color: cornflowerblue">Audience Goals</h2>
+     College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.
+<h2 style="color: cornflowerblue">Persona</h2>
+<img src="media/cool-joe.jpg" alt="Cool-Joe" style="display: inline">
+<ul style="display: inline">
+    <li><b>Name:</b>Joe Cool</li>
+    <li><b>Occupation:</b>student</li>
+    <li><b>Age:</b>Eternaly 18</li>
+    <li><b>Intests:</b>Traveling, Flying, Play acting, Eating</li>
+    <li><b>Motivation:</b>Joe is not into planning.  His last minute scrambling, whether it is getting to class in the morning or heading out on his latest adventure, has left him unprepared for weather conditions many times (He is tired of sleeping in the rain and snow).  He would like to be more prepared...without having to put much effort into it...or planning.</li>
+    <li><b>Enviornment:</b>Joe is comfortable using laptops and Mobile devices, he will most often be found on a smart phone however.  Many of the places he frequents do not have great signal…he is often dealing with 3G speeds</li>
+<h2 style="color: cornflowerblue">Pages</h2>
+<ol>
+    <li><b>Franklin, Greenville, Springfield:</b> weather for each specific location. The weather for these pages should be pulled from the weather.JSON file that will be provided.</li>
+    <li><b>Home:</b> weather for the current location. Current location should be determined by using the Geolocation API of the browser.  This information should be passed to the WeatherUnderground API  (<a href="https://www.wunderground.com/weather/api/">https://www.wunderground.com/weather/api/</a>) to retrieve the current conditions. </li>
+    <li><b>Search:</b> Begins with only a search box, characters entered will cause a list of suggested matches to appear.  Selected location will pull up the weather. The search term from the field should be sent to the <a href="https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1">WeatherUnderground autocomplete API</a> (https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1), and the results used to pull the current conditions for the selected location.</li>
+</ol>
+</ul>
+<h2 style="color: cornflowerblue">Styles</h2>
+<h3 style="color: cornflowerblue">Branding</h3>
+         <p>The client provided the following initial concept for a name and logo:</p>
+         <font size="6"><b><i>Weather Site</i></b></font>The name should be bold and italic.
+         <br>
+         &#9748
+<h3 style="color: cornflowerblue">Typography</h3>
+         
+         
+         
+         
+         
+         
+         
+         
+<footer>
+ &copy;2017 Colby Smith
+</footer>
+ </body>
+</html>

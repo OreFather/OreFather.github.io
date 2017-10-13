@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 main {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    background-image: url(media/sunny-winter.jpg);
+    background-size: cover;
 }
 * {
  box-sizing: border-box; /*  width property
@@ -9,12 +12,24 @@ main {
 }
 
 body {
- margin: 0; /* remove margin from body */
- padding: 0; /* padding */
+    margin: 0; /* remove margin from body */
+    padding: 0; /* padding */
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+footer {
+    background-color: #0e89d5;
+}
+header {
+    background-color: #0e89d5;
 }
 nav ul {
     display: flex;
     list-style: none;
+}
+nav ul li {
+    padding-right: 1em;
+    font-size: 4vw;
 }
 nav {
     position: fixed;
@@ -23,6 +38,11 @@ nav {
     right: 0;
     padding: 5px;
     line-height: 5px;
+    background-color: #0e89d5;
+}
+nav a:link {
+    text-decoration: none;
+    color: #FFF;
 }
 .site-name {
     font-size: 2em;
@@ -36,4 +56,18 @@ nav {
 }
 .overview ul {
     list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, "second choice", generic-family;
+}
+section {
+    background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
 }

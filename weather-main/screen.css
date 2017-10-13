@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+* {
+ box-sizing: border-box; /*  width property
+    to total width instead of content width */
+}
+
+body {
+ margin: 0; /* remove margin from body */
+ padding: 0; /* padding */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    line-height: 5px;
+}
+.site-name {
+    font-size: 2em;
+    font-weight: 600;
+}
+#page-header {
+    display: inline;
+}
+.cur_conditions ul {
+    list-style: none;
+}
+.overview ul {
+    list-style: none;
+}

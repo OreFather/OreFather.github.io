@@ -1,6 +1,14 @@
 body {
-    background-image: url(images/lGreen.jpeg);
+    background-color: black;
 }
 h1 {
     color: white;
+    font-size: 35px;
+}
+body {
+    color: white;
+}
+li {
+    list-style: none;
+    font-size: 20px;
 }

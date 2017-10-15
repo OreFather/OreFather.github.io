@@ -19,17 +19,27 @@ body {
 }
 footer {
     background-color: #0e89d5;
+    width: 100%;
+    margin-bottom: 2.5em;
+    
 }
 header {
     background-color: #0e89d5;
 }
+#character {
+    font-size: 3em;
+    margin: 0;
+}
 nav ul {
     display: flex;
     list-style: none;
+    color: white;
+    
 }
 nav ul li {
     padding-right: 1em;
     font-size: 4vw;
+    color: white;
 }
 nav {
     position: fixed;
@@ -39,23 +49,35 @@ nav {
     padding: 5px;
     line-height: 5px;
     background-color: #0e89d5;
+    color: white;
 }
 nav a:link {
     text-decoration: none;
     color: #FFF;
 }
 .site-name {
-    font-size: 2em;
+    padding: .2em;
+    font-size: 2.5em;
     font-weight: 600;
 }
 #page-header {
-    display: inline;
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 .cur_conditions ul {
     list-style: none;
 }
-.overview ul {
-    list-style: none;
+.overview {
+    margin: .5em; 
+    padding: 1em;
+    padding-bottom: 0;
+}
+.overview a {
+    font-size: 2em;
+}
+#listing {
+    text-align: left;
 }
 h1,
 h2,
@@ -65,9 +87,26 @@ h5,
 h6 {
     font-family: Sansita, "second choice", generic-family;
 }
+h1 {
+    color: white;
+}
+#current_temp {
+    
+}
 section {
     background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
+}
+h3 {
+    color: white;
+    border-color: black;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+ul {
+    padding: 0;
 }

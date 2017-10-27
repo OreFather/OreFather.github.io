@@ -5,23 +5,23 @@ main {
     align-items: center;
     background-image: url(media/sunny-winter.jpg);
     background-size: cover;
+
 }
 * {
  box-sizing: border-box; /*  width property
     to total width instead of content width */
 }
-
 body {
     margin: 0; /* remove margin from body */
     padding: 0; /* padding */
     font-size: 20px;
     font-family: 'Helvetica', sans-serif;
 }
+
 footer {
-    background-color: #0e89d5;
     width: 100%;
-    margin-bottom: 2.5em;
-    
+    padding: 1em 0 0em 0em;
+    background-color: #0E89D5;
 }
 header {
     background-color: #0e89d5;
@@ -30,28 +30,28 @@ header {
     font-size: 3em;
     margin: 0;
 }
+ul {
+    list-style: none;
+}
 nav ul {
     display: flex;
-    list-style: none;
+    justify-content: space-around;
     color: white;
-    
+    padding: 0;
+    margin: 0;
 }
 nav ul li {
-    padding-right: 1em;
-    font-size: 4vw;
-    color: white;
+    line-height: 3em;
 }
 nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 5px;
-    line-height: 5px;
+    font-size: .9em;
     background-color: #0e89d5;
-    color: white;
 }
-nav a:link {
+nav a {
     text-decoration: none;
     color: #FFF;
 }
@@ -65,19 +65,23 @@ nav a:link {
     align-items: center;
     width: 100%;
 }
+.cur_conditions {
+    margin: auto;
+}
 .cur_conditions ul {
     list-style: none;
 }
 .overview {
-    margin: .5em; 
+    margin: auto; 
     padding: 1em;
-    padding-bottom: 0;
 }
 .overview a {
     font-size: 2em;
 }
 #listing {
     text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 h1,
 h2,
@@ -86,6 +90,9 @@ h4,
 h5,
 h6 {
     font-family: Sansita, "second choice", generic-family;
+}
+h3 {
+    text-align: center
 }
 h1 {
     color: white;
@@ -109,4 +116,71 @@ li {
 }
 ul {
     padding: 0;
+}
+.invisible {
+    display: none;
+}
+.time li {
+    list-style-type: none;
+}
+.temp li {
+    list-style-type: none;
+}
+
+@media screen and (min-width: 500px) {
+    .invisible {
+    display: inline-block;
+    }
+    .overflow_fix {
+        height: 200px;
+        overflow: auto;
+        width: 220px;
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
+}    
+    .time {
+        text-align: right;
+}
+    .overview {
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 1em;
+        flex: 0 0 100%;
+        order: 1;
+    }
+
+    .overview {
+        order: 3;
+    }
+    .cur_conditions {
+        order: 2;
+    }
+    .hourly {
+        order: 4; 
+        
+        
+    }
+    main {
+        flex-flow:  wrap;
+        align-items: stretch;
+        background-image: url("media/raindrops.jpg");
+    }
+    nav {
+        position: initial;
+        line-height: .5em;
+        font-size: 1em;
+        width: 100%;
+    }
+     .location {
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 1em;
+        flex: 0 0 100%;
+        order: 1;
+    }
+    footer {
+    order: 5;
+}
+
 }

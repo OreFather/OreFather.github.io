@@ -7,13 +7,18 @@ main {
     background-size: cover;
 
 }
+
 * {
- box-sizing: border-box; /*  width property
+    box-sizing: border-box;
+    /*  width property
     to total width instead of content width */
 }
+
 body {
-    margin: 0; /* remove margin from body */
-    padding: 0; /* padding */
+    margin: 0;
+    /* remove margin from body */
+    padding: 0;
+    /* padding */
     font-size: 20px;
     font-family: 'Helvetica', sans-serif;
 }
@@ -23,16 +28,20 @@ footer {
     padding: 1em 0 0em 0em;
     background-color: #0E89D5;
 }
+
 header {
     background-color: #0e89d5;
 }
+
 #character {
     font-size: 3em;
     margin: 0;
 }
+
 ul {
     list-style: none;
 }
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -40,9 +49,11 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li {
     line-height: 3em;
 }
+
 nav {
     position: fixed;
     bottom: 0;
@@ -51,38 +62,47 @@ nav {
     font-size: .9em;
     background-color: #0e89d5;
 }
+
 nav a {
     text-decoration: none;
     color: #FFF;
 }
+
 .site-name {
     padding: .2em;
     font-size: 2.5em;
     font-weight: 600;
 }
+
 #page-header {
     display: flex;
     align-items: center;
     width: 100%;
 }
+
 .cur_conditions {
     margin: auto;
 }
+
 .cur_conditions ul {
     list-style: none;
 }
+
 .overview {
-    margin: auto; 
+    margin: auto;
     padding: 1em;
 }
+
 .overview a {
     font-size: 2em;
 }
+
 #listing {
     text-align: left;
     padding-left: 1em;
     padding-right: 1em;
 }
+
 h1,
 h2,
 h3,
@@ -91,80 +111,62 @@ h5,
 h6 {
     font-family: Sansita, "second choice", generic-family;
 }
+
 h3 {
     text-align: center
 }
+
 h1 {
     color: white;
 }
-#current_temp {
-    
-}
+
+#current_temp {}
+
 section {
-    background-color: rgba(200,200,200,.6);
+    background-color: rgba(200, 200, 200, .6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 5px;
 }
+
 h3 {
     color: white;
     border-color: black;
 }
+
 li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
+
 ul {
     padding: 0;
 }
+
 .invisible {
     display: none;
 }
+
 .time li {
     list-style-type: none;
 }
+
 .temp li {
     list-style-type: none;
 }
 
 @media screen and (min-width: 500px) {
     .invisible {
-    display: inline-block;
-    }
-    .overflow_fix {
-        height: 200px;
-        overflow: auto;
-        width: 220px;
-        display: flex;
-        flex-flow: column wrap;
-        align-content: space-around;
-}    
-    .time {
-        text-align: right;
-}
-    .overview {
-        align-self: flex-start;
-        text-align: left;
-        padding-left: 1em;
-        flex: 0 0 100%;
-        order: 1;
+        display: inline-block;
+        order: 4;
     }
 
-    .overview {
-        order: 3;
-    }
-    .cur_conditions {
-        order: 2;
-    }
-    .hourly {
-        order: 4; 
-        
-        
-    }
-    main {
-        flex-flow:  wrap;
-        align-items: stretch;
-        background-image: url("media/raindrops.jpg");
+    .thisFixesit {
+        display: flex;
+        order: 5;
+        align-content: center;
+        width: 100%;
+        height: 50%;
     }
     nav {
         position: initial;
@@ -172,15 +174,56 @@ ul {
         font-size: 1em;
         width: 100%;
     }
-     .location {
+
+    .overflow_fix {
+        height: 200px;
+        overflow: auto;
+        width: 220px;
+        /*        display: flex;*/
+        /*        flex-flow: column wrap;*/
+        /*        align-content: space-around;*/
+    }
+    .time {
+        text-align: left;
+        width: 50%;
+    }
+    .temp {
+        text-align: right;
+    }
+    
+    .overview {
+        align-self: flex-start;
+        text-align: left;
+        order: 1;
+    }
+    .cur_conditions {
+        order: 2;
+    }
+    body {
+        /*        display: flex;*/
+        flex-direction: row;
+    }
+
+    main {
+        display: flex;
+        /*        flex-direction: row;*/
+        flex-flow: wrap;
+        align-items: stretch;
+        background-image: url("media/raindrops.jpg");
+    }
+
+
+
+    .location {
         align-self: flex-start;
         text-align: left;
         padding-left: 1em;
         flex: 0 0 100%;
         order: 1;
     }
+
     footer {
-    order: 5;
-}
+        order: 5;
+    }
 
 }

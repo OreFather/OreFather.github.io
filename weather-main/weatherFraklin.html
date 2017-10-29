@@ -2,7 +2,6 @@
 <html lang="en-us">
 
 <head>
-
     <meta charset="UTF-8">
     <title>Franklin, ID | Weather</title>
     <meta name="description" content="Doctument Content">
@@ -11,11 +10,11 @@
 </head>
 
 <body>
-    <main>
         <header id="page-header">
             <p id="character"> &#9748; </p>
             <h1 class="site-name">Weather Site</h1>
-        </header>
+    </header>
+
         <br>
         <nav>
             <ul>
@@ -26,35 +25,88 @@
                 <li><a href="">Search</a></li>
             </ul>
         </nav>
-        <h1>Franklin, ID</h1>
+    <main>
+        <h1 class="location">Franklin, ID</h1>
 
+        <div class="thisFixesit">
         <section class="overview">
-            
-            <b><a>88 F</a></b>
-            <p id="current_temp"><b>90 / 66 F</b></p>
-           
+            <h2 class= "invisible">Current Temp</h2>
+            <ul id="listCase">
+            <li class="tempNow"><a>88 F</a></li>
+            <li id="current_temp"><b>90 / 66 F</b></li>
+            </ul>
         </section>
-       
+
         <section class="cur_conditions">
-            <h3>Current Conditions</h3>
+            <h2>Current Conditions</h2>
             <ul id="listing">
                 <li><b>Wind: </b>Southwest @ 1-5 MPH</li>
                 <li><b>Precipitation: </b>0%</li>
             </ul>
         </section>
-        
-        <section class="hourly">
-            <!-- <h4><b>Hourly Forecast</b></h4>
-            <d1>
-                <dt>7am     0F</dt>
-                <dt>8am     0F</dt>
-                <dt>9am     1F</dt>
-            </d1>    -->
+
+        <section class="invisible">
+            <h2>Hourly Forcast</h2>
+            <article class="overflow_fix">
+                <ul class="time" title="hours">
+                    <li><b>12 am</b></li>
+                    <li><b>1 am</b></li>
+                    <li><b>2 am</b></li>
+                    <li><b>3 am</b></li>
+                    <li><b>4 am</b></li>
+                    <li><b>5 am</b></li>
+                    <li><b>6 am</b></li>
+                    <li><b>7 am</b></li>
+                    <li><b>8 am</b></li>
+                    <li><b>9 am</b></li>
+                    <li><b>10 am</b></li>
+                    <li><b>11 am</b></li>
+                    <li><b>12 pm</b></li>
+                    <li><b>1 pm</b></li>
+                    <li><b>2 pm</b></li>
+                    <li><b>3 pm</b></li>
+                    <li><b>4 pm</b></li>
+                    <li><b>5 pm</b></li>
+                    <li><b>6 pm</b></li>
+                    <li><b>7 pm</b></li>
+                    <li><b>8 pm</b></li>
+                    <li><b>9 pm</b></li>
+                    <li><b>10 pm</b></li>
+                    <li><b>11 pm</b></li>
+                </ul>
+                <ul class="temp" title="temperature in fahrenhiet">
+                    <li>67F</li>
+                    <li>67F</li>
+                    <li>69F</li>
+                    <li>69F</li>
+                    <li>69F</li>
+                    <li>70F</li>
+                    <li>69F</li>
+                    <li>72F</li>
+                    <li>74F</li>
+                    <li>77F</li>
+                    <li>79F</li>
+                    <li>81F</li>
+                    <li>84F</li>
+                    <li>86F</li>
+                    <li>88F</li>
+                    <li>90F</li>
+                    <li>90F</li>
+                    <li>85F</li>
+                    <li>83F</li>
+                    <li>79F</li>
+                    <li>74F</li>
+                    <li>70F</li>
+                    <li>68F</li>
+                    <li>66F</li>
+                </ul>
+            </article>
         </section>
+        </div>
+    </main>
         <footer>
             &copy;2017 Colby Smith
         </footer>
-    </main>
     <br>
 
 </body>

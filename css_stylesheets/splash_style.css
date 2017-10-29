@@ -1,5 +1,5 @@
 body {
-    background-color: darkslategrey;
+    background-color: white;
 }
 h1 {
     color: white;
@@ -7,6 +7,7 @@ h1 {
 }
 body {
     color: white;
+    align-content: center;
 }
 li {
     list-style: none;

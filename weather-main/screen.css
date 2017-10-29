@@ -25,7 +25,8 @@ body {
 
 footer {
     width: 100%;
-    padding: 1em 0 0em 0em;
+    padding: .5em 0em .5em 0em;
+    margin-bottom: 2em;
     background-color: #0E89D5;
 }
 
@@ -37,7 +38,12 @@ header {
     font-size: 3em;
     margin: 0;
 }
-
+.tempNow {
+    text-align: center;
+}
+#listCase {
+   text-align: center;
+}
 ul {
     list-style: none;
 }
@@ -89,7 +95,6 @@ nav a {
 }
 
 .overview {
-    margin: auto;
     padding: 1em;
 }
 
@@ -102,6 +107,9 @@ nav a {
     padding-left: 1em;
     padding-right: 1em;
 }
+.tempNow {
+    display: inline;
+}
 
 h1,
 h2,
@@ -112,14 +120,13 @@ h6 {
     font-family: Sansita, "second choice", generic-family;
 }
 
-h3 {
-    text-align: center
-}
-
 h1 {
     color: white;
 }
-
+h2 {
+    text-align: center;
+    color: black;
+}
 #current_temp {}
 
 section {
@@ -132,6 +139,7 @@ section {
 h3 {
     color: white;
     border-color: black;
+    text-align: center;
 }
 
 li {
@@ -165,8 +173,8 @@ ul {
         display: flex;
         order: 5;
         align-content: center;
-        width: 100%;
-        height: 50%;
+        width: 100%
+
     }
     nav {
         position: initial;
@@ -179,21 +187,20 @@ ul {
         height: 200px;
         overflow: auto;
         width: 220px;
-        /*        display: flex;*/
-        /*        flex-flow: column wrap;*/
-        /*        align-content: space-around;*/
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-around;
     }
     .time {
         text-align: left;
-        width: 50%;
     }
+/*
     .temp {
         text-align: right;
     }
+*/
     
     .overview {
-        align-self: flex-start;
-        text-align: left;
         order: 1;
     }
     .cur_conditions {
@@ -211,9 +218,6 @@ ul {
         align-items: stretch;
         background-image: url("media/raindrops.jpg");
     }
-
-
-
     .location {
         align-self: flex-start;
         text-align: left;
@@ -224,6 +228,11 @@ ul {
 
     footer {
         order: 5;
+        padding-bottom: 1em;
+    }
+        .tempNow {
+        margin: .5em 0 0 0;
+            align-content: center;
     }
 
 }

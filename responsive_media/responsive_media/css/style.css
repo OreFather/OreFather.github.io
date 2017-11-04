@@ -50,7 +50,10 @@ h1 {
 /*	Background Images - use with Small screens */
 
 .page-header {
-    background-image: url(https://orefather.github.org/responsive_media/responsive_media/imagesbanner-400x80-.jpeg);
+    background-image: url("/responsive_media/responsive_media/images/logo-50-.png"), url("/responsive_media/responsive_media/images/banner-400x80-.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right, center;
+    background-size: contain, cover;
 }
 
 
@@ -172,7 +175,13 @@ h1 {
 		line-height: 1.125;
 	}
 	/*	Background Images - Use with medium screens */
-	.page-header {}
+	.page-header {
+        background-image: url(/responsive_media/responsive_media/images/logo-100-.png), url(/responsive_media/responsive_media/images/banner-800x125-.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, center;
+        background-size: contain, cover;
+}
+    }
 	.page-nav {
 		position: relative;
 	}
@@ -200,7 +209,6 @@ h1 {
 	.page-footer {
 		margin-bottom: .5em;
 	}
-}
 
 
 /********************************
@@ -217,7 +225,12 @@ h1 {
 		line-height: 1.05;
 	}
 	/*	Background Images - Use with large screens */
-	.page-header {}
+	.page-header {
+        background-image: url(/responsive_media/responsive_media/images/logo-150-.png), url(/responsive_media/responsive_media/images/banner-1200x200-.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, center;
+        background-size: contain, cover;
+    }
 	.page-nav li {
 		flex: 0 1 10%;
 	}

@@ -8,6 +8,9 @@ main {
 
 }
 
+#hourlyTemp li {
+    font-size: 20px;
+}
 * {
     box-sizing: border-box;
     /*  width property
@@ -38,7 +41,7 @@ header {
     font-size: 3em;
     margin: 0;
 }
-.tempNow {
+.currentTemp {
     text-align: center;
 }
 #listCase {
@@ -107,9 +110,6 @@ nav a {
     padding-left: 1em;
     padding-right: 1em;
 }
-.tempNow {
-    display: inline;
-}
 
 h1,
 h2,
@@ -127,7 +127,10 @@ h2 {
     text-align: center;
     color: black;
 }
-#current_temp {}
+#currentTemp {
+    display: inline;
+    font-size: 50px;
+}
 
 section {
     background-color: rgba(200, 200, 200, .6);
@@ -230,7 +233,7 @@ ul {
         order: 5;
         padding-bottom: 1em;
     }
-        .tempNow {
+        #currentTemp {
         margin: .5em 0 0 0;
             align-content: center;
     }

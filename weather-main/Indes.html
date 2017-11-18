@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en-us">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Home</title>
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <link rel="stylesheet" href="../jsonweather-html/css/weather-style.css" type="text/css" media="screen">
+    <meta charset="UTF-8">
+    <title>Current Weather</title>
+    <meta name="description" content="Doctument Content">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
 </head>
 <!-- *********************************************
 * Who Did You Collaborate With On This Assessment?
@@ -17,33 +17,66 @@
 * 5.
 * ******************************************** -->
 <body>
-  <div id="wrapper">
-    <header id="page-header"></header>
-    <nav id="page-nav"></nav>
-    <main id="page-main">
-      <section class="weather-container">
-        <div id="cover">
-          <div id="status">Loading...</div>
+        <header id="page-header">
+            <p id="character"> &#9748; </p>
+            <h1 class="site-name">Current Weather</h1>
+    </header>
+
+        <br>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="weatherFraklin.html">Franklin</a></li>
+                <li><a href="weatherGreenville.html">Greenville</a></li>
+                <li><a href="">Springfield</a></li>
+                <li><a href="">Search</a></li>
+            </ul>
+        </nav>
+    <main>
+        <h1 class="location"></h1>
+
+        <div class="thisFixesit">
+        <section class="overview">
+            <h2 class= "invisible">Current Temp</h2>
+            <ul id="listCase">
+            <li id="currentTemp"></li>
+            <li id="current_temp"></li>
+            </ul>
+        </section>
+
+        <section class="cur_conditions">
+            <h2>Current Conditions</h2>
+            <ul id="listing">
+                <li id="add2"></li>
+                <li id="wetness"></li>
+            </ul>
+        </section>
+
+        <section class="invisible">
+            <h2>Hourly Forcast</h2>
+            <article class="overflow_fix">
+                <ul id="hourlyTemp">
+                    <li id="hour1"></li>
+                
+                </ul>
+            </article>
+        </section>
         </div>
-        <h1 id="cityDisplay"></h1>
-        <h2>Current Conditions</h2>
-        <ul id="current_conditions">
-          <li id="currentTemp"></li>
-          <li id="summary"></li>
-          <li id="add1"></li>
-          <li id="add2"></li>
-          <li id="add3"></li>
-        </ul>
-      </section>
     </main>
-    <footer id="page-footer">
-      <div id="footer-content"></div>
-      <small>Last updated: </small>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+        <footer>
+            &copy;2017 Colby Smith
+        </footer>
+    <br>
+   <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script src="../jsonweather-html/scripts/modules.js"></script>
     <script src="../jsonweather-html/scripts/remote_wu.js"></script>
-  </div>
 </body>
 
 </html>
+
+
+
+
+
+
+

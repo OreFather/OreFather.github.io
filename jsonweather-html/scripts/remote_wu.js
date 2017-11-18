@@ -22,7 +22,7 @@ $(function () {
 
   // Get the data from the wunderground API
   function getData(lat, long){
-      $.ajax({url: "http://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/q/" + lat + "," + long + ".json", success: function(data){
+      $.ajax({url: "http://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/hourly/q/" + lat + "," + long + ".json", success: function(data){
           $(console.log(data));
           $("#currentTemp").text(data.current_observation.dewpoint_f + "°F");
           $("#summary").text(data.current_observation.weather);
@@ -30,7 +30,10 @@ $(function () {
           $("#add2").text("Wind: " + data.current_observation.wind_string);
           $("#add3").text("Visibility: " + data.current_observation.visibility_mi + "mi");
           $("#cityDisplay").text(data.location.city + ", " + data.location.state);
-        $("#cover").fadeOut(250);
+          $("#wetness").text("Precipitation: " + data.current_observation.precip_1hr_in);
+          $(".location").text(data.current_observation.display_location.city);
+          
+          $(".hour1").text(data.hourly_forecast["0"].dewpoint);
       }})
   }
 

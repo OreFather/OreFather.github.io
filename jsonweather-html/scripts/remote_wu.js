@@ -22,7 +22,7 @@ $(function () {
 
   // Get the data from the wunderground API
   function getData(lat, long){
-      $.get("http://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/q/" + lat + "," + long + ".json", function(data){
+      $.ajax({url: "http://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/q/" + lat + "," + long + ".json", success: function(data){
           $(console.log(data));
           $("#currentTemp").text(data.current_observation.dewpoint_f + "°F");
           $("#summary").text(data.current_observation.weather);
@@ -31,7 +31,7 @@ $(function () {
           $("#add3").text("Visibility: " + data.current_observation.visibility_mi + "mi");
           $("#cityDisplay").text(data.location.city + ", " + data.location.state);
         $("#cover").fadeOut(250);
-      })
+      }})
   }
 
   // A function for changing a string to TitleCase

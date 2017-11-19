@@ -8,8 +8,8 @@ main {
 
 }
 
-#hourlyTemp li {
-    font-size: 20px;
+#hour1 {
+    font-size: 2em;
 }
 * {
     box-sizing: border-box;

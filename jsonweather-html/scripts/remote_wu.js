@@ -32,6 +32,7 @@ $(function () {
           $("#cityDisplay").text(data.location.city + ", " + data.location.state);
           $("#wetness").text("Precipitation: " + data.current_observation.precip_1hr_in);
           $(".location").text(data.current_observation.display_location.city);
+          $(".pageTitle").prepend(data.location.city + ", " + data.location.state);
           
           $(".hour1").text("Test" + data.hourly_forecast["0"].dewpoint);
       }})

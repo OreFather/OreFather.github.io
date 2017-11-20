@@ -22,7 +22,7 @@ $(function () {
 
   // Get the data from the wunderground API
   function getData(lat, long){
-      $.ajax({url: "http://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/hourly/q/" + lat + "," + long + ".json", success: function(data){
+      $.ajax({url: "https://api.wunderground.com/api/8c68a198c4c50c75/geolookup/conditions/hourly/q/" + lat + "," + long + ".json", success: function(data){
           $(console.log(data));
           $("#currentTemp").text(data.current_observation.dewpoint_f + "°F");
           $("#summary").text(data.current_observation.weather);

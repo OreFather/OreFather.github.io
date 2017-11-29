@@ -1,41 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="UTF-8">
+<html lang="en-us">
+
+<head>
+        <meta charset="UTF-8">
         <meta http-equiv="X-UA-compatible" content="ie=edge">
     <!-- Adapts webpage to device screen-->
     <meta name="viewport" content="width=device-width">
         <title>Search Bar</title>
-    </head>
-    
+    <meta name="description" content="Doctument Content">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="search.css" media="screen">
+</head>
+
 <body>
- 
-    
-<!--Search form-->
+        <header id="page-header">
+            <p id="character"> &#9748; </p>
+            <h1 class="site-name">Weather Site</h1>
+    </header>
+
+        <br>
+        <nav>
+            <ul>
+                <li><a href="../weather-main/Indes.html">Home</a></li>
+                <li><a href="../weather-main/weatherFraklin.html">Franklin</a></li>
+                <li><a href="../weather-main/weatherGreenville.html">Greenville</a></li>
+                <li><a href="">Springfield</a></li>
+                <li><a href="/search.html">Search</a></li>
+            </ul>
+        </nav>
+    <main>
+        <!--Search form-->
 <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
   <input type="search" name="query" id="query">
   <input type="submit" name="submit" value="Search" id="send">
 </form>
-
-
-<!--Search results-->
+        
 <section id="searchResults">
-  <h2>Search Results</h2>
 </section>
+        
+        <div id="toggle">
+            <h2 id="location"></h2>
+            <div id="box-layout">
+                <section class="overview" id="order1">
+                    <h3 id="temp-banner">Current Temp</h3>
+                    <p id="temp"></p>
+                    <h4 id="sum-banner">Today's High and Low</h4>
+                    <ul class="summary">
+                        <li id="high-low">90 F / 66 F</li>
+                    </ul>
+                </section>
+                <section class="cur_conditions">
+                    <h3>Current Conditions</h3>
+                    <ul class="conditions">
+                        <li class="label">Wind:</li>
+                        <li id="wind"></li>
+                        <li class="label">Precipitation:</li>
+                        <li id="precip">0%</li>
+                    </ul>
+                    <figure>
+                        <figcaption id="summary"></figcaption>
+                    </figure>
+                </section>
+            </div>
+        </div>
     
     
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
-
-      <script src="search.js"></script>
+    
+    
+    </main>
+        <footer>
+            &copy;2017 Colby Smith
+        </footer>
+    <br>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="search.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-

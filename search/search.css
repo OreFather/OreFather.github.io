@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+#srchfrm {
+    align-self: center;
+    margin: auto;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+nav ul li {
+    line-height: 3em;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* support for older browsers */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    /* set font style for webpage */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Sansita', sans-serif;
+    /* set font style for headings */
+}
+
+#page-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+header {
+    background-color: #0e89d5;
+}
+
+
+#logo {
+    /* sets size of logo (top right corner) */
+    width: 20%;
+    height: auto;
+    margin-left: .5em;
+}
+
+h1 {
+    margin-left: .5em;
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: .4em;
+    margin-bottom: .2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* ^ puts nav on the bottom of the screen */
+    background-color: #0e89d5;
+    font-size: .85em;
+}
+
+.menu {
+    /* navigation menu */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* link styles */
+
+a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #D8F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0e89d5;
+    text-decoration: none;
+}
+
+
+main {
+    min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #FFF;
+    background-image: url(../weather-main/media/raindrops.jpg);
+    background-size: cover;
+
+}
+
+#box-layout {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgba(200, 200, 200, .6);
+    border: 1px solid;
+    border-color: #000;
+    border-radius: 10px;
+}
+
+#query {
+    width: 80%;
+    text-decoration: none;
+    color: #FFF;
+    padding: 0px;
+}
+
+#send {
+    color: #fff;
+}
+
+ol {
+    list-style: none;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+
+}
+
+.overview {
+    /* first section in main */
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 55%;
+    background-color: rgba(200, 200, 200, .6);
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#temp-banner {
+    display: none;
+    /* hides "Current Temperature" banner in .overview */
+}
+
+#temp {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: .5em;
+    margin-bottom: .25em;
+}
+
+#sum-banner {
+    display: none;
+    /* hides "Today's High and Low" banner in .overview */
+}
+
+.summary {
+    align-items: center;
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+#sum-img-li {
+    height: 35px;
+    margin-right: .65em;
+}
+
+#sum-img {
+    width: 35px;
+    height: auto;
+}
+
+.cur_conditions {
+    /* second section in main */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 75%;
+    background-color: rgba(200, 200, 200, .6);
+    margin-top: .4em;
+    margin-bottom: 2em;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+figure {
+    display: none;
+}
+
+
+.conditions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.label {
+    font-weight: bold;
+    margin-left: .25em;
+    margin-right: .5em;
+}
+
+.hr-temp {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 75%;
+    background-color: rgba(200, 200, 200, .7);
+    margin-bottom: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.hr-lists {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    text-align: right;
+}
+
+.hr-temp ul {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+footer {
+    font-size: .9em;
+    margin-bottom: 45px;
+    margin-left: .25em;
+}
+
+@media only screen and (min-width: 760px) {
+
+    #logo {
+        width: 5%;
+        height: auto;
+    }
+
+    nav {
+        position: static;
+        border-top-color: #000;
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        padding: 5px 0px;
+    }
+
+    .menu {
+        margin: 0;
+        font-size: 2em;
+        justify-content: flex-start;
+    }
+
+    .menu li {
+        margin-left: .75em;
+    }
+
+    main {
+        min-height: 500px;
+    }
+
+    h2 {
+        margin-left: 25.5px;
+        align-self: flex-start;
+    }
+
+    form {
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: rgba(200, 200, 200, .6);
+        border: 1px solid;
+        border-color: #000;
+        border-radius: 5px;
+        padding-left: 5px;
+    }
+
+    #query {
+        width: 89.5%;
+        height: 30px;
+        text-decoration: none;
+        font-size: 26px;
+        color: #FFF;
+        background-color: rgba(200, 200, 200, .6);
+        border: 0px;
+
+        padding: 0px;
+    }
+
+    #send {
+        width: 10%;
+        color: #000;
+        background-color: rgba(200, 200, 200, .6);
+        border: 0px;
+        padding: 0px;
+    }
+
+    .sreturn a:hover {
+        color: #000;
+        text-decoration: none;
+    }
+
+    #toggle {
+        width: 100%;
+    }
+
+    #box-layout {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .overview,
+    .cur_conditions,
+    .hr-temp {
+        margin-top: 20px;
+    }
+
+    #sum-img-li {
+        display: none;
+    }
+
+    figure {
+        display: flex;
+        align-items: center;
+        margin: 0em;
+    }
+
+    #cur-sum-img {
+        display: block;
+        width: 40%;
+        height: 40%;
+        justify-content: center;
+        margin: 0em .5em;
+    }
+
+    .cur_conditions {
+        order: -1;
+        max-width: 300px;
+    }
+
+    #order1 {
+        order: -2;
+    }
+
+
+    .overview {
+        max-width: 250px;
+    }
+
+    .hr-temp {
+        max-width: 300px;
+    }
+
+    #temp-banner {
+        display: block;
+    }
+
+    #sum-banner {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-bottom: 10px;
+    }
+}

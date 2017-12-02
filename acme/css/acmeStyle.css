@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Jaldi');
 
 /*Font usage ->   font-family: 'Jaldi', sans-serif;*/
+
+/*Template Formating*/
 .mainContainer {
     background-color: white;
     
     display: flex;
     flex-direction: column;
 }
-
-
-
-
 body {
     background-image: url(../images/site/background.jpg);
     background-size: cover
@@ -28,13 +26,14 @@ nav ul {
     align-self: flex-start;
     padding: 0;
     margin: 0;
+    font-family: 'Jaldi', sans-serif;
 }
 nav ul li {
     line-height: 2em;
 }
 a {
     text-decoration: none;
-    font-family: 'Jaldi', sans-serif;
+    
     color: white;
 }
 a:hover {
@@ -43,13 +42,35 @@ a:hover {
 a:active {
     font-weight: bold;
 }
-
-
 #pageTitle {
     font-family: 'Jaldi', sans-serif;
 }
+footer {
+    text-align-last: center;
+    border-top: 3px solid black;
+    font-size: 10px;
+}
+
+
+
+#pageTitle {
+    margin-left: 5px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+
+
+/*Home Page*/
+.homeContent {
+    display: flex;
+}
 .featureContain {
-    margin: 20px;
+    margin-left: 20px;
+}
+#rocket {
+    position: relative;
 }
 .top-right {
 /*
@@ -58,11 +79,48 @@ a:active {
     right: 16px;
 */
 }
+.rocketButton {
+    cursor: pointer;
+    position: absolute;
+    top: 190px;
+    left: 600px;
+}
+.homeImage {
+    position: relative;
+    max-width: 100%;
+}
+span {
+    position: absolute;
+    top: 0px;
+    left: 600px;
+    width: 20%;
+    font-family: 'Jaldi', sans-serif;    
+}
+span h1 {
+    margin: 0px;
+    border: 0px;
+}
+span h2 {
+    color: white; 
+    font: bold 24px/45px Helvetica, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: 0px;
+}
 
 
 
-footer {
-    text-align-last: center;
-    border-top: 3px solid black;
-    font-size: 10px;
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 300px) {
+        
 }

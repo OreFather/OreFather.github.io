@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $.getJSON("js/acme.json", function(json){
         $(".productContent").hide();
+        $("#extraLogo").hide();
+        $("#extraHome").hide();
         $("#listI1").append(json.Anvils[0].name);
         $("#listI2").append(json.Explosives[0].name);
         $("#listI3").append(json.Decoys[0].name);

@@ -96,7 +96,6 @@ footer {
     margin-left: 20px;
 }
 #rocket {
-    position: relative;
     margin-left: 10px;
 }
 .rocketButton {
@@ -144,15 +143,12 @@ span h3 {
     margin-right: 50px;
     margin-bottom: 20px;
 }
-.featuredRecipes #BBQ div {
-    
-}
 .featuredRecipes img {
     border-style: solid;
     border-width: 10px;
     border-color: lightgrey;
+    margin-right: 50px;
 }
-
 #touchThat {
     display: flex;
 }
@@ -160,6 +156,7 @@ span h3 {
      text-decoration: underline;
     cursor: pointer;
     font-family: 'Jaldi', sans-serif;
+    margin-right: 35px;
 }
 #touchThat div:hover {
     color: orange;
@@ -167,7 +164,7 @@ span h3 {
 
 
 
-/*Product Page*/
+/*Product page*/
 .productContent {
     display: flex;
     justify-content: space-around;
@@ -202,9 +199,101 @@ span h3 {
 
 /*Mobile Adaption*/
 
-@media only screen and (max-width: 200px) {
-    #extraLogo,
-    #extraHome {
-        display: none;
+/*Large*/
+@media (max-width: 1000px) {
+/*Nav bar*/
+    nav {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+    footer {
+        margin-bottom: 30px;
+    }
+/*Home page*/
+    #rocket {
+        height: 330px;
+    }
+/*Lower Home section*/
+    .rocketReviews {
+        margin-right: 10px;
+    }
+/*Product page*/
+    #alingment {
+        margin-left: 0px;
+    }
+    .productContent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #productPic {
+        display: block;
+        margin: auto;
+    }
+    #productPic img {
+        height: 300px;
+    }
+    #productDesc {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 25px;
+    }
+    #productReviews {
+        text-align: center;
+        font-size: 25px;
+    }
+    #productPrice {
+        text-align: center;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    #productMan {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+/*Medium*/
+@media (max-width: 500px) {
+    #rocket {
+        height: 190px;
+    }
+/*Lower Home page*/
+    .rocketReviews {
+        margin-right: 20px;
+    }
+    #imageAligner {
+        display: flex;
+    }
+    .featuredRecipes {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .featuredRecipes img {
+        margin-right: 0px;
+    }
+    #touchThat div {
+        margin-right: 0px;
+    }
+    
+/*Product page*/
+    
+    #productPic img {
+        height: 200px;
+    }
+    #productDesc {
+        font-size: 20px;
+        font-weight: 400; 
+    }
+    #productReviews {
+        font-size: 20px;
+    }
+    #productPrice {
+        font-size: 30px;
+        font-weight: 300;
+    }
+    #productMan {
+        font-size: 20px;
     }
 }

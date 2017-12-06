@@ -1,10 +1,83 @@
 $(document).ready(function(){
     $.getJSON("js/acme.json", function(json){
-        
+        $(".productContent").hide();
         $("#listI1").append(json.Anvils[0].name);
         $("#listI2").append(json.Explosives[0].name);
         $("#listI3").append(json.Decoys[0].name);
         $("#listI4").append(json.Traps[0].name);
-        console.log("JS li load complete");
+        console.log("JS list load complete");
+        $("#pageTitle").append("Welcome to A.C.M.E.");
+        
+        $("#listI1").click(function(){
+            $("#homeContent").hide();
+            $(".productContent").show();
+            $("#pageTitle").empty();
+            $("#productPic").empty();
+            $("#productDesc").empty();
+            $("#productMan").empty();
+            $("#productReviews").empty();
+            $("#productPrice").empty();
+            $("#pageTitle").append("Solid Steel Anvil")
+            var picLocal = json.Anvils[0].path;
+            $("#productPic").append('<img src="' + picLocal + '" />');
+            $("#productDesc").append(json.Anvils[0].description);
+            $("#productMan").append("<b>Built by: </b>" + json.Anvils[0].manufacturer);
+            $("#productReviews").append("<b>Customer Score: </b>" + json.Anvils[0].reviews + "/5");
+            $("#productPrice").append("<b>Price: </b>$" + json.Anvils[0].price);
+        })
+        $("#listI2").click(function(){    
+            $("#homeContent").hide();
+            $(".productContent").show();
+            $("#pageTitle").empty();
+            $("#productPic").empty();
+            $("#productDesc").empty();
+            $("#productMan").empty();
+            $("#productReviews").empty();
+            $("#productPrice").empty();
+            $("#pageTitle").append("Top Tier T.N.T.")
+            var picLocal = json.Explosives[0].path;
+            $("#productPic").append('<img src="' + picLocal + '" />');
+            $("#productDesc").append(json.Explosives[0].description);
+            $("#productMan").append("<b>Built by: </b>" + json.Explosives[0].manufacturer);
+            $("#productReviews").append("<b>Customer Score: </b>" + json.Explosives[0].reviews +"/5");
+            $("#productPrice").append("<b>Price: </b>$" + json.Explosives[0].price);
+        })
+        $("#listI3").click(function(){    
+            $("#homeContent").hide();
+            $(".productContent").show();
+            $("#pageTitle").empty();
+            $("#productPic").empty();
+            $("#productDesc").empty();
+            $("#productMan").empty();
+            $("#productReviews").empty();
+            $("#productPrice").empty();
+            $("#pageTitle").append("Life-like Decoy")
+            var picLocal = json.Decoys[0].path;
+            $("#productPic").append('<img src="' + picLocal + '" />');
+            $("#productDesc").append(json.Decoys[0].description);
+            $("#productMan").append("<b>Built by: </b>" + json.Decoys[0].manufacturer);
+            $("#productReviews").append("<b>Customer Score: </b>" + json.Decoys[0].reviews +"/5");
+            $("#productPrice").append("<b>Price: </b>$" + json.Decoys[0].price);
+        })
+        $("#listI4").click(function(){    
+            $("#homeContent").hide();
+            $(".productContent").show();
+            $("#pageTitle").empty();
+            $("#productPic").empty();
+            $("#productDesc").empty();
+            $("#productMan").empty();
+            $("#productReviews").empty();
+            $("#productPrice").empty();
+            $("#pageTitle").append("12-Teeth Trap")
+            var picLocal = json.Traps[0].path;
+            $("#productPic").append('<img src="' + picLocal + '" />');
+            $("#productDesc").append(json.Traps[0].description);
+            $("#productMan").append("<b>Built by: </b>" + json.Traps[0].manufacturer);
+            $("#productReviews").append("<b>Customer Score: </b>" + json.Traps[0].reviews +"/5");
+            $("#productPrice").append("<b>Price: </b>$" + json.Traps[0].price);
+        })
     });
 });
+
+
+

@@ -58,7 +58,8 @@ footer {
     margin-left: 5px;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 900
 }
 
 
@@ -152,8 +153,42 @@ span h3 {
     color: orange;
 }
 
+
+
+/*Product Page*/
+.productContent {
+    display: flex;
+    justify-content: space-around;
+}
+#alingment {
+    margin-left: 100px;
+}
+#productPic {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#productDesc {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+#productReviews {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+}
+#productPrice {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: darkorange;
+    
+}
+#productMan {
+    font-family: 'Jaldi', sans-serif;
+    font-size: 30px;
+}
+
 /*Mobile Adaption*/
 
-@media screen and (max-width: 300px) {
-        
+@media only screen and (max-width: 500px) {
 }

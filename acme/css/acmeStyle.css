@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Jaldi');
+/*@import url('https://fonts.googleapis.com/css?family=Jaldi');*/
 
 /*Font usage ->   font-family: 'Jaldi', sans-serif;*/
 
@@ -82,6 +82,7 @@ footer {
     top: 190px;
     left: 600px;
 }
+
 .homeImage {
     position: relative;
     max-width: 100%;
@@ -193,10 +194,23 @@ span h3 {
     #rocket {
         height: 330px;
     }
+    span {
+    top: 0px;
+    left: 500px;
+    width: 30%;
+}
+    .rocketButton {
+    top: 190px;
+    left: 500px;
+}
 /*Lower Home section*/
     .rocketReviews {
         margin-right: 10px;
     }
+    
+.rocketReviews ul li {
+    font-size: 0.88em
+}
 /*Product page*/
     #alingment {
         margin-left: 0px;
@@ -237,10 +251,24 @@ span h3 {
     #rocket {
         height: 190px;
     }
+    span {
+    top: 0px;
+    left: 500px;
+    width: 30%;
+}
+    .rocketButton {
+    top: 190px;
+    left: 500px;
+}
+    
+.rocketReviews ul li {
+    
+}
 /*Lower Home page*/
     .rocketReviews {
         margin-right: 20px;
     }
+    
     #imageAligner {
         display: flex;
     }
@@ -253,6 +281,7 @@ span h3 {
     }
     #touchThat div {
         margin-right: 0px;
+        font-size: 20px;
     }
     
 /*Product page*/

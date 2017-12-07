@@ -135,7 +135,7 @@ article h3 {
      text-decoration: underline;
     cursor: pointer;
     font-family: 'Jaldi', sans-serif;
-    margin-right: 35px;
+    margin-right: 15px;
 }
 #touchThat div:hover {
     color: orange;
@@ -147,7 +147,7 @@ article h3 {
      text-decoration: underline;
     cursor: pointer;
     font-family: 'Jaldi', sans-serif;
-    margin-right: 35px;
+    margin-right: 15px;
 }
 #touchThat1 div:hover {
     color: orange;

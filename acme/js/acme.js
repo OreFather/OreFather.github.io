@@ -1,11 +1,12 @@
 $(document).ready(function(){
     $.getJSON("js/acme.json", function(json){
+        console.log(json);
         $(".productContent").hide();
         $("#listI1").append(json.Anvils[0].name);
         $("#listI2").append(json.Explosives[0].name);
         $("#listI3").append(json.Decoys[0].name);
         $("#listI4").append(json.Traps[0].name);
-        console.log("JS list load complete");
+        console.log("--JSON nav load complete--");
         $("#pageTitle").append("Welcome to A.C.M.E.");
         
         $("#listI1").click(function(){

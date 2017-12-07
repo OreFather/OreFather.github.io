@@ -87,20 +87,20 @@ footer {
     position: relative;
     max-width: 100%;
 }
-span {
+article {
     position: absolute;
     top: 0px;
     left: 600px;
     width: 20%;
     font-family: 'Jaldi', sans-serif;    
 }
-span h1 {
+article h1 {
     margin-top: 20px;
     margin-bottom: 0px;
     border: 0px;
     font-size: 25px;
 }
-span h3 {
+article h3 {
     margin: 0px;
 }
 /*Lower section of Home page*/
@@ -140,7 +140,18 @@ span h3 {
 #touchThat div:hover {
     color: orange;
 }
-
+#touchThat1 {
+    display: flex;
+}
+#touchThat1 div {
+     text-decoration: underline;
+    cursor: pointer;
+    font-family: 'Jaldi', sans-serif;
+    margin-right: 35px;
+}
+#touchThat1 div:hover {
+    color: orange;
+}
 
 
 /*Product page*/
@@ -197,7 +208,7 @@ span h3 {
     #rocket {
         height: 330px;
     }
-    span {
+    article {
     top: 0px;
     left: 500px;
     width: 30%;
@@ -257,7 +268,7 @@ span h3 {
     #rocket {
         height: 190px;
     }
-    span {
+    article {
     top: 0px;
     left: 400px;
     width: 30%;
@@ -279,6 +290,9 @@ span h3 {
     #imageAligner {
         display: flex;
     }
+    #imageAligner1 {
+        display: flex;
+    }
     .featuredRecipes {
         margin-left: 10px;
         margin-right: 0px;
@@ -287,6 +301,10 @@ span h3 {
         margin-right: 0px;
     }
     #touchThat div {
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    #touchThat1 div {
         margin-right: 0px;
         font-size: 20px;
     }

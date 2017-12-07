@@ -53,6 +53,7 @@ footer {
     text-align: center;
     border-top: 3px solid black;
     font-size: 10px;
+    margin-bottom: 0px;
 }
 #pageTitle {
     margin-left: 10px;

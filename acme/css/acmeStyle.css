@@ -252,7 +252,7 @@ span h3 {
 /*Medium*/
 @media (max-width: 500px) {
     nav ul li {
-    line-height: 10em;
+    line-height: 3em;
 }
     #rocket {
         height: 190px;

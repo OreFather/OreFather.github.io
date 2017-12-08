@@ -6,10 +6,12 @@ $(document).ready(function(){
         $("#listI3").append(json.Decoys[0].name);
         $("#listI4").append(json.Traps[0].name);
         console.log("JS list load complete");
+        $("title").append("ACME | Home");
         $("#pageTitle").append("Welcome to A.C.M.E.");
         
         $("#listI1").click(function(){
             clearSlots();
+            $("title").append("ACME | Anvil");
             $(".productContent").show();
             $("#pageTitle").append("Solid Steel Anvil");
             var picLocal = json.Anvils[0].path;
@@ -21,6 +23,7 @@ $(document).ready(function(){
         })
         $("#listI2").click(function(){
             clearSlots();
+            $("title").append("ACME | T.N.T.");
             $(".productContent").show();
             $("#pageTitle").append("Top Tier T.N.T.");
             var picLocal = json.Explosives[0].path;
@@ -32,6 +35,7 @@ $(document).ready(function(){
         })
         $("#listI3").click(function(){
             clearSlots();
+            $("title").append("ACME | Decoy");
             $(".productContent").show();
             $("#pageTitle").append("Life-like Decoy");
             var picLocal = json.Decoys[0].path;
@@ -43,6 +47,7 @@ $(document).ready(function(){
         })
         $("#listI4").click(function(){
             clearSlots();
+            $("title").append("ACME | Trap");
             $(".productContent").show();
             $("#pageTitle").append("12-Teeth Trap");
             var picLocal = json.Traps[0].path;
@@ -62,4 +67,5 @@ function clearSlots() {
     $("#productMan").empty();
     $("#productReviews").empty();
     $("#productPrice").empty();
+    $("title").empty();
 }
